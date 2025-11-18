@@ -70,9 +70,9 @@ const Navbar: React.FC = () => {
               {/* LOGO */}
               <a href="#hero" className="transition-opacity duration-300">
                 <img
-                  src={green ? "/logo.svg" : "/logo.svg"}
+                  src={green ? "/logo-green.svg" : "/logo-white.svg"}
                   alt="Kalisloka Logo"
-                  className="h-8 md:h-10 w-auto transition-all duration-300"
+                  className="h-5 md:h-6 w-auto transition-all duration-300"
                 />
               </a>
 
