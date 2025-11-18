@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       className="
         w-full
         bg-[#004035]
-        text-[#E8FAD9]
+        text-[#E6FFCF]
         pt-10 pb-14
       "
     >
@@ -32,12 +32,32 @@ const Footer: React.FC = () => {
         </div>
 
         {/* RIGHT SIDE (OFFICE LOCATION) */}
-        <div className="flex md:justify-end mt-8 md:mt-0">
-          <div className="text-right">
-            <p className="text-sm opacity-80">Office Location</p>
-            <p className="text-sm opacity-90">Cianjur, West Java</p>
-          </div>
+        {/* RIGHT SIDE — Office Location + Copyright */}
+        <div
+          className="
+            w-full
+            md:w-auto
+            flex flex-col
+            justify-center md:justify-end
+            items-end
+            mt-10 md:mt-0
+            text-center md:text-right
+          "
+        >
+          <p className="text-sm opacity-80">Office Location</p>
+          <p className="text-sm font-semibold opacity-90">Cianjur, West Java</p>
+
+          {/* SPACING */}
+          <div className="h-6"></div>
+
+          {/* COPYRIGHT */}
+          <p className="text-sm opacity-70">© 2025 Kalisloka. All rights reserved.</p>
+          <p className="text-sm opacity-70">
+            Legal entity registered as PT Sujana Kalis Loka.
+          </p>
         </div>
+
+
 
       </div>
     </footer>
