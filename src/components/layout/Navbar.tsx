@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
               flex flex-col
               ${green
                 ? "bg-[#d0e9bd]/80 px-6 border border-[#A3D6A1]/30 rounded-full backdrop-blur-md mt-3 shadow-sm"
-                : "bg-transparent border-transparent mt-5"
+                : "bg-transparent border-transparent mt-5 backdr"
               }
             `}
           >
