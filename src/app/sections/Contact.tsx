@@ -78,7 +78,7 @@ const ContactSection: React.FC = () => {
 
           {/* ICONS */}
           <div className="flex items-center gap-4">
-            <Link href="https://instagram.com">
+            <Link href="https://www.instagram.com/kalisloka/">
               <img
                 src="/icons/instagram.svg"
                 className="w-5 h-5 opacity-90 hover:opacity-100 transition"
