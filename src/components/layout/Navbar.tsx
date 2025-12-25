@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 
 type NavItem = {
   label: string;
@@ -71,13 +72,13 @@ const Navbar: React.FC = () => {
           >
             <div className="flex items-center justify-between w-full py-4 md:py-5">
               {/* LOGO */}
-              <a href="#hero" onClick={() => setOpen(false)}>
+              <Link href="/" onClick={() => setOpen(false)}>
                 <img
                   src={green ? "/logo-green.svg" : "/logo-white.svg"}
                   alt="Kalisloka Logo"
                   className="h-5 md:h-6 w-auto transition-all duration-300"
                 />
-              </a>
+              </Link>
 
               {/* DESKTOP MENU (incl. CTA) */}
               <div
@@ -88,7 +89,7 @@ const Navbar: React.FC = () => {
               >
                 {NAV_ITEMS.map((item) =>
                   item.cta ? (
-                    <a
+                    <Link
                       key={item.label}
                       href={item.href}
                       className={`${
@@ -98,15 +99,15 @@ const Navbar: React.FC = () => {
                       } rounded-full text-sm font-semibold px-5 py-2 hover:opacity-90 transition-all`}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ) : (
-                    <a
+                    <Link
                       key={item.label}
                       href={item.href}
                       className="hover:opacity-70 transition"
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
@@ -163,7 +164,7 @@ const Navbar: React.FC = () => {
           </button>
 
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
@@ -178,7 +179,7 @@ const Navbar: React.FC = () => {
               }
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

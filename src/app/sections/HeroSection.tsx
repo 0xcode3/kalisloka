@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const HeroSection: React.FC = () => {
   return (
@@ -72,16 +73,16 @@ const HeroSection: React.FC = () => {
 
           {/* CTA BUTTONS */}
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-            <a href="#products" className="rounded-full">
+            <Link href="#products" className="rounded-full">
               <Button variant="primary" className="px-6 py-3 text-sm">
                 Discover Products
               </Button>
-            </a>
-            <a href="#about" className="rounded-full">
+            </Link>
+            <Link href="#about" className="rounded-full">
               <Button variant="secondary" className="px-6 py-3 text-sm">
                 Learn More
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
