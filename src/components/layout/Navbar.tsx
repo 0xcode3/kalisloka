@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
               w-full transition-all duration-500 flex flex-col
               ${
                 green
-                  ? "bg-[#d0e9bd]/80 px-6 border border-[#A3D6A1]/30 rounded-full backdrop-blur-md mt-3 shadow-sm"
+                  ? "bg-[#d0e9bd]/80 px-6  rounded-full backdrop-blur-md mt-3 shadow-sm"
                   : "bg-transparent mt-5"
               }
             `}
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               {/* DESKTOP MENU (incl. CTA) */}
               <div
                 className={`
-                  hidden md:flex items-center gap-10 text-sm  font-medium
+                  hidden lg:flex items-center gap-10 text-sm  font-medium
                   ${green ? "text-[#004035]" : "text-white"}
                 `}
               >
@@ -96,7 +96,7 @@ const Navbar: React.FC = () => {
                         green
                           ? "bg-[#004035] text-[#E6FFCF]"
                           : "bg-[#E6FFCF] text-[#004035]"
-                      } rounded-full text-sm font-semibold px-5 py-2 hover:opacity-90 transition-all`}
+                      } rounded-full text-sm font-semibold px-3 lg:px-5 py-2 hover:opacity-90 transition-all`}
                     >
                       {item.label}
                     </Link>
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
               <button
                 type="button"
                 aria-label={open ? "Close menu" : "Open menu"}
-                className={`md:hidden text-3xl ${
+                className={`lg:hidden text-3xl ${
                   green ? "text-[#004035]" : "text-white"
                 }`}
                 onClick={() => setOpen((v) => !v)}
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
       {/* MOBILE MENU (animated) */}
       <div
         className={`
-          md:hidden fixed inset-0 z-50 flex items-center justify-center
+          lg:hidden fixed inset-0 z-50 flex items-center justify-center
           transition-all duration-300 ease-out
           ${
             open

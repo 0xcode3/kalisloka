@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           <p className="text-sm opacity-90">
             Phone / WhatsApp:{" "}
             <a
-              href="https://wa.me/message/YZZEUI7EHRHCB1"
+              href="https://wa.me/6285121383435"
               target="_blank"
               className="font-semibold hover:opacity-80 transition"
             >

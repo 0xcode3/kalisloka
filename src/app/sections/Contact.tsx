@@ -56,7 +56,7 @@ const ContactSection: React.FC = () => {
 
         {/* WhatsApp Button */}
         <Link
-          href="https://wa.me/message/YZZEUI7EHRHCB1"
+        href="https://wa.me/6285121383435"
           target="_blank"
           className="
             flex items-center gap-3
